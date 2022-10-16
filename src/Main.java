@@ -3,10 +3,9 @@ public class Main {
         Calculator calc = Calculator.instance.get();
 
         int a = calc.plus.apply(1, 2);
-        int b = calc.minus.apply(2,1);
-        int c = calc.devide.apply(a, b); //Здесь возникает ошибка ArithmeticException,
-        // в связи с тем, что в b значение равно нулю,
-        // чтобы не делить на ноль, поменял цифру в параметрах.
+        int b = calc.minus.apply(1,1);
+        int c = calc.devide.apply(a, b);
+
 
         calc.println.accept(c);
 
